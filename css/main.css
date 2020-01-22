@@ -1,0 +1,378 @@
+@import reset.css;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  background: #rgba(224,220,121,0.75);
+}
+
+/* .container{
+  width: 1291px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid #2f4f4f;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(400px auto);
+  grid-rows: 400px 400px 400px 400px;
+  grid-gap: 15px;
+  position: absolute;
+} */
+
+.header-wrapper{
+  position: relative;
+  width: 1291px;
+  height: 100vh;
+  margin: 0 auto;
+  background: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+18,e0dc79+79,1e5799+93&1+0,0.69+100 */
+background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(30,87,153,0.94) 18%, rgba(224,220,121,0.75) 79%, rgba(30,87,153,0.71) 93%, rgba(30,87,153,0.69) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(30,87,153,0.94) 18%,rgba(224,220,121,0.75) 79%,rgba(30,87,153,0.71) 93%,rgba(30,87,153,0.69) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(30,87,153,0.94) 18%,rgba(224,220,121,0.75) 79%,rgba(30,87,153,0.71) 93%,rgba(30,87,153,0.69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.top-header{
+  width: 100%;
+  height: 123px;
+  padding: 1.5px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left-info{
+  color: #333333;
+  font-size: 16px;
+  margin: 35px 299.984px 0px 0px;
+  padding: 0 0 0 40px;
+
+}
+
+/* ******//////we try//////************ */
+
+.nav-container{
+position: absolute;
+width: 250px;
+height: 100vh;
+z-index: 1;
+text-align: center;
+}
+
+.sidenav {
+  /* background: #rgba(224,220,121,0.75); */
+  position: relative;
+
+  height: 225px;
+  width: 250px;
+  z-index: 1;
+  /* transform: translate3d(-100%,0,0); */
+  transition: all .4s ease-in-out;
+  /* -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  background-color: #111; */
+}
+
+.sidenav.active{
+  /* transform: translate3d(0,0,0); */
+
+
+}
+
+.sidenav a {
+  left: 0;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #404040;
+  margin: 5px 10px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav button{
+  position: relative;
+  /* right: -300px; */
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.3s;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #404040;
+  margin: 5px 10px;
+}
+
+.show{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+
+.sidenav .closebtn {
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* ******//////we try//////************ */
+
+.middle-info{
+text-align: center;
+
+
+}
+
+.middle-info .hotbox{
+
+}
+
+.middle-info .img-box{
+  width: 420px;
+  height: 120px;
+  margin: 10px auto;
+
+}
+
+.middle-info .img{
+  /* margin: 0 26px; */
+  width: 100%;
+  height: 100%;
+  background: url("../images/mail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.right-info{
+  /* padding: 0 0 0 19.3594px; */
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  /* padding-left: 1.5%; */
+}
+
+.right-info p{
+  display: inline-block;
+  padding: 42px 0;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  padding-left: 1.5%;
+
+}
+
+.bottom-header{
+  display: inline-block;
+  margin: 0 214px;
+  text-align: center;
+  height: 51px;
+  padding: 12px 0;
+}
+
+.bottom-header nav{
+
+}
+
+.bottom-header nav ul{
+  margin: 0 auto;
+}
+
+.bottom-header nav ul li{
+  display: inline-block;
+
+}
+
+.bottom-header nav ul li a{
+  font-size: 19px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#feedback{
+  height: 100vh;
+  background: rgba(30,87,153,1);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(400px auto);
+  grid-template-rows: 400px 400px 400px 400px;
+  /* grid-gap: 15px; */
+}
+
+.marqee-section{
+  /* grid-column: 1/5;
+  grid-row: 3/5; */
+  color: #1f1f1f;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 30px auto;
+  -webkit-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+-moz-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+  opacity: .9;
+}
+
+.marqee-section > div{
+  display: flex;
+}
+
+.marqee-section .author-container{
+  /* float: left; */
+  padding: 0 0 0 0px;
+  /* border: 1px dotted red; */
+}
+
+.marqee-section .author-container .author-wrapper{
+  width: 1291px;
+  display: inline-block;
+  /* border: 1px dotted red; */
+  padding: 60px 0 60px 20px;
+}
+.marquu{
+  
+}
+.marqee-section .author-container .author-wrapper .author-img{
+  padding: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-image: url("../images/mib.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  -webkit-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+-moz-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+}
+
+.marqee-section .author-container .author-wrapper .who{
+  background: lime;
+  width: 22%;
+  padding: 10px;
+  float: left;
+}
+
+.marqee-section .author-container .author-wrapper .who h5{
+  float: left;
+ /* background: lightgreen; */
+ /* display: inline-block; */
+ padding-left: 20px;
+
+}
+
+.marqee-section .comment{
+  width: 66%;
+  display: inline-block;
+  /* float: right; */
+  margin: 0px 120px 0 0;
+  /* border: 1px dotted red; */
+  -webkit-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+-moz-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+float: left;
+}
+
+.marqee-section .response{
+  display: inline-block;
+  width: 33%;
+  -webkit-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+-moz-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
+  /* float: right; */
+  /* padding: 0px 536px 0 0; */
+  /* border: 1px dotted red; */
+}
+
+
+marquee{
+  text-align: center;
+  grid-gap: 15px;
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+
+.marqee-section p{
+  font-size: .9rem;
+}
+
+#outback{
+  height: 400px;
+  background: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+18,e0dc79+79,1e5799+93&1+0,0.69+100 */
+background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(30,87,153,0.94) 18%, rgba(224,220,121,0.75) 79%, rgba(30,87,153,0.71) 93%, rgba(30,87,153,0.69) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(30,87,153,0.94) 18%,rgba(224,220,121,0.75) 79%,rgba(30,87,153,0.71) 93%,rgba(30,87,153,0.69) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(30,87,153,0.94) 18%,rgba(224,220,121,0.75) 79%,rgba(30,87,153,0.71) 93%,rgba(30,87,153,0.69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-auto-rows: minmax(400px auto); */
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#outback .steak{
+  grid-column: 1/3;
+  grid-row: 1/5;
+  background: orangered;
+}
+
+#outback .steak .steak-sauce{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-auto-rows: minmax(100px auto); */
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+#outback .steak .steak-sauce .fritter{
+  background: salmon;
+  grid-column: 1/2;
+  grid-row: 1/12;
+}
+
+#outback .steak .steak-sauce .salad{
+  background: salmon;
+  grid-column: 2/3;
+  grid-row: 1/12;
+}
+
+#outback .steak .steak-sauce .mint{
+  background: salmon;
+  grid-column: 3/4;
+  grid-row: 1/12;
+}
+
+/* #outback .steak .steak-sauce .steak-img{
+
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  justify-content: center;
+  background-image: url("https://irp-cdn.multiscreensite.com/1d4bce99/dms3rep/multi/mobile/876+Equestrian+Drive+Lot+11+%2834%29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+} */
