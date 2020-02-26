@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>marq1</title>
+  <script src="source/controler/initialize.js"></script>
+  <script src="source/view/retrieve.js"></script>
+  <script src="source/model/Msg.js"></script>
+  <script>
+    window.addEventListener("load",
+      publicLibrary.view.retrieve.setupUserInterface);
+  </script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-wrapper">
+      <section class='top-header'>
+
+        <div class="left-info">
+          social logo
+        </div>
+
+        <div class="middle-info">
+          <div class="hotbox">
+            <marquee behavior="alternate" direction="right" scrollamount="1">
+            <div class="img-box">
+              <div class="img">
+
+              </div>
+            </div>
+          </marquee>
+          </div>
+
+
+        </div>
+
+        <div class="right-info">
+          <p>Call For A Free Estimate | phone #</p>
+        </div>
+      </section>
+
+      <section class='bottom-header'>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Painting</a></li>
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div id="feedback">
+        <marquee behavior="scroll" direction="up" scrollamount="3">
+          <section class="marqee-section">
+            <div class="author-container">
+              <div class="author-wrapper">
+                <div class="author-img">
+
+                </div>
+                <div class="who">
+                  <h5>we know who</h5>
+                </div>
+
+                <div class="comment">
+                  <p>People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.</p>
+                </div>
+              </div>
+                <div class="author-wrapper">
+                  <div class="author-img">
+
+                  </div>
+                  <div class="who">
+                    <h5>we know who</h5>
+                  </div>
+
+                  <div class="comment">
+                    <p>People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.</p>
+                  </div>//
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="marqee-section">
+            <div class="author-container">
+              <div class="author-wrapper">
+                <div class="author-img">
+
+                </div>
+                <div class="who">
+                  <h5>we know who</h5>
+                </div>
+
+                <div class="comment">
+                  <p>People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.</p>
+                </div>
+              </div>
+                <div class="author-wrapper">
+                  <div class="author-img">
+
+                  </div>
+                  <div class="who">
+                    <h5>we know who</h5>
+                  </div>
+
+                  <div class="comment">
+                    <p>People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.People are face picking in the racks and I want to cry.</p>
+                  </div>//
+                </div>
+              </div>
+            </div>
+          </section>
+        </marquee>
+      </div>
+      <div id="outback">
+        <div class="steak">
+          <div class="steak-sauce">
+            <div class="fritter">
+              <div class="steak-img"></div>
+            </div>
+
+            <div class="salad">
+              <div class="steak-img"></div>
+            </div>
+
+            <div class="mint">
+              <div class="steak-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <menu>
+      <li><a href="retrieveAndListAllMsgs.html">
+          List all msgs</a></li>
+      <li><a href="createMsg.html">Add a new msg</a></li>
+      <li><a href="updateMsg.html">Update a msg</a></li>
+      <li><a href="deleteMsg.html">Delete a msg</a></li>
+      <li><button type="button" onblick="Msg.clearData()">
+          Clear database
+        </button></li>
+      <li><button type="button" onblick="Msg.generateTestData()">
+          Create test data
+        </button></li>
+    </menu>
+    <a href="createMsg.html">Back to main menu</a>
+    <a href="retrieveAndListAllMsgs.html">View Msgs</a>
+  </footer>
+
+<!-- <script type="text/javascript">
+  var pGraph = document.getElementsByClassName("comment");
+  pGraph.textContent = Msg.instances["1233"].messageInput
+</script> -->
+
+<!-- <script>
+
+function myFunction() {
+  var para = document.createElement("P");
+  para.innerHTML = "This is a paragraph.";
+  var noDoz = document.getElementsByClassName("comment");
+  noDoz[0].innerHTML = pGraph;
+  console.log(noDoz.innerHTML);
+}
+</script> -->
+<!-- ananda nolan	When the sky's cotton candy melts and stirs into a sipping-pink lemonade. -->
+<button onclick="myFunction()">Try it</button>
+</body>
+
+</html>

@@ -78,9 +78,9 @@ Msg.destroy = function (isbn) {
 ********************************************/
 //  Create and save test data
 Msg.generateTestData = function () {
-  Msg.instances["006251587X"] = new Msg({isbn:"006251587X", userName:"Weaving the Web", year:2000});
-  Msg.instances["0465026567"] = new Msg({isbn:"0465026567", userName:"Gödel, Escher, Bach", year:1999});
-  Msg.instances["0465030793"] = new Msg({isbn:"0465030793", userName:"I Am A Strange Loop", year:2008});
+  Msg.instances["006251587X"] = new Msg({isbn:"006251587X", userName:"Weaving the Web", messageInput:2000});
+  Msg.instances["0465026567"] = new Msg({isbn:"0465026567", userName:"Gödel, Escher, Bach", messageInput:1999});
+  Msg.instances["0465030793"] = new Msg({isbn:"0465030793", userName:"I Am A Strange Loop", messageInput:2008});
   Msg.saveAll();
 };
 //  Clear data

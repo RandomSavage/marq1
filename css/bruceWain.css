@@ -49,20 +49,6 @@ background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(30,87,153,0.94) 18
 
 }
 
-.right-info{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#clock{
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: #111111;
-  text-shadow: 2px 2px black;
-}
-
 /* ******//////we try//////************ */
 
 .nav-container{
@@ -248,39 +234,27 @@ text-align: center;
 -moz-box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
 box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
   opacity: .9;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
 }
 
 .marqee-section > div{
-
+  display: flex;
 }
 
 .marqee-section .author-container{
   /* float: left; */
   padding: 0 0 0 0px;
   /* border: 1px dotted red; */
-
 }
 
 .marqee-section .author-container .author-wrapper{
   width: 1291px;
+  display: inline-block;
   /* border: 1px dotted red; */
   padding: 60px 0 60px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
 }
+.marquu{
 
-.authId{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
 }
-
 .marqee-section .author-container .author-wrapper .author-img{
   padding: 10px;
   width: 75px;
@@ -297,7 +271,7 @@ box-shadow: -5px 10px 10px -2px rgba(124,123,130,1);
 }
 
 .marqee-section .author-container .author-wrapper .who{
-
+  background: lime;
   width: 22%;
   padding: 10px;
   float: left;

@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Minimal JS Front-End App Example</title>
+  <title>Create Message</title>
+  <link rel="stylesheet" href="css/createMessage.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script src="source/controler/initialize.js"></script>
   <script src="source/model/Msg.js"></script>
   <script src="source/view/createMsg.js"></script>
@@ -20,13 +22,13 @@
   <main>
 
     <form id="Msg">
-      <div><label>ISBN: <input type="text" name="isbn"></label></div>
+      <div><label>Message Number: <br><input type="text" name="isbn"></label></div>
 
-      <div><label>User Name: <input type="text" name="userName"></label></div>
+      <div><label>User Name: <br><input type="text" name="userName"></label></div>
 
-      <div><label>Message:
+      <div><label>Message:<br>
           <textarea form="Msg" name="messageInput" rows="10" cols="30">
-      The cat was playing in the garden.
+      When the sky's cotton candy melts and stirs into a sipping-pink lemonade.
       </textarea>
         </label></div>
       <div><button type="button" name="commit">Save</button></div>
@@ -39,12 +41,3 @@
 </body>
 
 </html>
-
-<form id="Msg" action="index.html" method="post">
-  First name:<br>
-  <input type="text" name="isbn"><br>
-  <input type="text" name="userName"><br>
-  <textarea form="Msg" name="message" rows="10" cols="30">
-  The cat was playing in the garden.
-  </textarea>
-</form>
