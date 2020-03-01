@@ -71,6 +71,10 @@ header h1{
   cursor: pointer;
 }
 
+#Msg div input:focus {
+    outline: none;
+}
+
 #Msg div textarea{
   width: 500px;
   font-size: 1.8rem;
